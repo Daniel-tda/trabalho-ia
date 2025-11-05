@@ -1,0 +1,19 @@
+- story: F-USER-001
+  title: "Frontend User Registration"
+  description: "As a new user, I want to see a registration form and submit my details to create an account."
+  acceptance_criteria:
+    - "A user can navigate to the '/register' route."
+    - "The form contains fields for name, email, and password."
+    - "Client-side validation provides feedback for invalid input."
+    - "On successful submission, the user is redirected to the login page."
+    - "An error message is displayed if registration fails (e.g., email already exists)."
+
+- story: F-USER-002
+  title: "Frontend User Login"
+  description: "As a registered user, I want to log in using a form to access the application."
+  acceptance_criteria:
+    - "A user can navigate to the '/login' route."
+    - "The form contains fields for email and password."
+    - "On successful login, the received JWT is stored securely (e.g., in localStorage)."
+    - "The user is redirected to the main dashboard ('/')."
+    - "An error message is displayed for invalid credentials."

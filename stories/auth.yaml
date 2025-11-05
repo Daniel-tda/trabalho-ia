@@ -1,0 +1,19 @@
+- story: USER-001
+  title: "User Registration"
+  description: "As a new user, I want to create an account so that I can access the TaskFlow system."
+  acceptance_criteria:
+    - "User provides name, email, and a valid password."
+    - "The system validates the input."
+    - "Password is securely hashed and stored."
+    - "A new user record is created in the database."
+    - "User is notified of successful registration."
+
+- story: USER-002
+  title: "User Login"
+  description: "As a registered user, I want to log in to the system to access my projects and tasks."
+  acceptance_criteria:
+    - "User provides a valid email and password."
+    - "The system authenticates the credentials."
+    - "Upon successful authentication, a JWT is generated and returned."
+    - "The user is granted access to the system."
+    - "An error message is shown for invalid credentials."

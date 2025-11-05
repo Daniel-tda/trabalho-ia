@@ -1,0 +1,25 @@
+- story: PROJ-001
+  title: "Create a New Project"
+  description: "As an authenticated user, I want to create a new project to organize my tasks."
+  acceptance_criteria:
+    - "User must be logged in."
+    - "User provides a project name and an optional description."
+    - "A new project is created and associated with the user as the owner."
+    - "The user is redirected to the new project's task board."
+
+- story: TASK-001
+  title: "Create a New Task"
+  description: "As a project member, I want to create a new task within a project."
+  acceptance_criteria:
+    - "User must be on a project's task board page."
+    - "User provides a task title and description."
+    - "The new task is created with a default status of 'To Do'."
+    - "The task appears in the 'To Do' column of the board."
+
+- story: TASK-004
+  title: "Update Task Status"
+  description: "As a project member, I want to change the status of a task to reflect its progress."
+  acceptance_criteria:
+    - "User can view the task board."
+    - "User can move a task from one status column to another (e.g., 'To Do' -> 'In Progress')."
+    - "The task's status is updated in the database."

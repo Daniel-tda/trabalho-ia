@@ -1,0 +1,24 @@
+- story: F-PROJ-001
+  title: "View Projects Dashboard"
+  description: "As a logged-in user, I want to see a list of all my projects on the main dashboard."
+  acceptance_criteria:
+    - "After login, the user is on the '/' route."
+    - "An API call is made to `GET /api/projects`."
+    - "The projects are displayed as a list or grid of cards."
+    - "A button to 'Create New Project' is visible."
+
+- story: F-TASK-001
+  title: "View Task Board"
+  description: "As a user, I want to click on a project and see its tasks organized in a Kanban board."
+  acceptance_criteria:
+    - "Clicking a project card navigates the user to `/projects/{projectId}`."
+    - "An API call is made to `GET /api/projects/{projectId}/tasks`."
+    - "Tasks are displayed in columns representing their status ('To Do', 'In Progress', 'Done')."
+
+- story: F-TASK-004
+  title: "Update Task Status via UI"
+  description: "As a user, I want to drag and drop a task to a new column to update its status."
+  acceptance_criteria:
+    - "The UI supports dragging task cards between status columns."
+    - "When a task is dropped, an API call is made to `PUT /api/tasks/{taskId}` with the new status."
+    - "The UI updates to reflect the change."
